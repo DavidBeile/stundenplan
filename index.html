@@ -362,10 +362,11 @@ a.raum{display:inline-block;color:inherit;text-decoration:none;border-bottom:1px
 <p class="hinweis">Das Abo landet in der Kalender-App und aktualisiert sich von selbst, auch wenn etwas ausfällt.</p>
 </main><script>
 (function(){
+  function hoch(el,klasse){while(el&&el.nodeType===1){if(el.classList.contains(klasse))return el;el=el.parentNode;}return null;}
   function kw(d){d=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
     var t=d.getUTCDay()||7;d.setUTCDate(d.getUTCDate()+4-t);
     var j=new Date(Date.UTC(d.getUTCFullYear(),0,1));
-    return d.getUTCFullYear()+"-KW"+String(Math.ceil(((d-j)/864e5+1)/7)).padStart(2,"0");}
+    return d.getUTCFullYear()+"-KW"+("0"+Math.ceil(((d-j)/864e5+1)/7)).slice(-2);}
   var heute=new Date(), id=kw(heute);
   var wochen=[].slice.call(document.querySelectorAll(".woche"));
   var knoepfe=[].slice.call(document.querySelectorAll(".wahl button"));
@@ -387,7 +388,7 @@ a.raum{display:inline-block;color:inherit;text-decoration:none;border-bottom:1px
   function zeigeTag(i){
     if(i<0||i>=tage.length)return; akt=i;
     tage.forEach(function(t,j){t.classList.toggle("zeigen",j===i)});
-    var t=tage[i], w=t.closest(".woche").id;
+    var t=tage[i], w=hoch(t,"woche").id;
     if(!document.getElementById(w).classList.contains("aktiv"))zeige(w);
     label.textContent=t.querySelector("h3").textContent+(t.classList.contains("heute")?" · heute":"");
     label.classList.toggle("heute",t.classList.contains("heute"));
@@ -397,9 +398,9 @@ a.raum{display:inline-block;color:inherit;text-decoration:none;border-bottom:1px
   document.addEventListener("touchstart",function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
   document.addEventListener("touchend",function(e){if(x0===null||!mobil.matches)return;
     var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
-    if(e.target.closest(".wahl,.countdown"))return;
+    if(hoch(e.target,"wahl")||hoch(e.target,"countdown"))return;
     if(Math.abs(dx)>60&&Math.abs(dx)>1.5*Math.abs(dy))zeigeTag(akt+(dx<0?1:-1));},{passive:true});
-  var start=tage.findIndex(function(t){return t.dataset.iso>=heuteIso});
+  var start=-1;for(var si=0;si<tage.length;si++){if(tage[si].dataset.iso>=heuteIso){start=si;break;}}
   zeigeTag(start<0?tage.length-1:start);
 
   // Ausblenden pro Fach und pro Countdown-Eintrag, gemerkt im Browser des Betrachters
@@ -407,24 +408,24 @@ a.raum{display:inline-block;color:inherit;text-decoration:none;border-bottom:1px
   function schreib(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
   var aus=lies("sp_faecher_aus"), cdAus=lies("sp_countdown_aus");
   function anwenden(){
-    document.querySelectorAll(".kasten[data-fach]").forEach(function(k){
+    [].forEach.call(document.querySelectorAll(".kasten[data-fach]"),function(k){
       var weg=aus.indexOf(k.dataset.fach)>=0;k.classList.toggle("versteckt",weg);
       if(k.parentNode.classList.contains("eintrag"))k.parentNode.classList.toggle("leerplatz",weg);});
-    document.querySelectorAll(".legende button").forEach(function(b){
+    [].forEach.call(document.querySelectorAll(".legende button"),function(b){
       b.classList.toggle("aus",aus.indexOf(b.dataset.fach)>=0);
       b.title=b.classList.contains("aus")?"wieder einblenden":"ausblenden";});
-    document.querySelectorAll(".cd").forEach(function(c){
+    [].forEach.call(document.querySelectorAll(".cd"),function(c){
       c.classList.toggle("versteckt",cdAus.indexOf(c.dataset.id)>=0||aus.indexOf(c.dataset.fach)>=0);});
   }
-  document.querySelectorAll(".legende button").forEach(function(b){b.onclick=function(){
+  [].forEach.call(document.querySelectorAll(".legende button"),function(b){b.onclick=function(){
     var f=b.dataset.fach,i=aus.indexOf(f);if(i>=0)aus.splice(i,1);else aus.push(f);
     schreib("sp_faecher_aus",aus);anwenden();}});
-  document.querySelectorAll(".cd .weg").forEach(function(b){b.onclick=function(){
+  [].forEach.call(document.querySelectorAll(".cd .weg"),function(b){b.onclick=function(){
     cdAus.push(b.parentNode.dataset.id);schreib("sp_countdown_aus",cdAus);anwenden();}});
 
   // Countdown: Tage bis zum Termin, Vergangenes ausblenden
   var h0=new Date(heute.getFullYear(),heute.getMonth(),heute.getDate());
-  document.querySelectorAll(".cd").forEach(function(c){
+  [].forEach.call(document.querySelectorAll(".cd"),function(c){
     var p=c.dataset.datum.split("-"),d=new Date(+p[0],p[1]-1,+p[2]),n=Math.round((d-h0)/864e5);
     if(n<0){c.remove();return;}
     c.querySelector("b").textContent=n===0?"heute":n===1?"morgen":"in "+n+" Tagen";
@@ -450,24 +451,27 @@ a.raum{display:inline-block;color:inherit;text-decoration:none;border-bottom:1px
   function info(r){var k=r.querySelector(".kasten");return k.dataset.titel+(k.dataset.raum?" · "+k.dataset.raum:"");}
   function jetztAktualisieren(){
     var d=new Date(),min=d.getHours()*60+d.getMinutes(),box=document.querySelector(".jetzt");
-    document.querySelectorAll(".jetztlinie").forEach(function(l){l.remove()});
-    document.querySelectorAll(".kasten.laeuft").forEach(function(k){k.classList.remove("laeuft")});
+    [].forEach.call(document.querySelectorAll(".jetztlinie"),function(l){l.remove()});
+    [].forEach.call(document.querySelectorAll(".kasten.laeuft"),function(k){k.classList.remove("laeuft")});
     var tag=document.querySelector('.tag[data-iso="'+iso(d)+'"]');
     if(!tag){box.hidden=true;return;}
     var reihen=[].slice.call(tag.querySelectorAll(".eintrag")).filter(function(r){var k=r.querySelector(".kasten");
       return k&&!k.classList.contains("aus")&&!k.classList.contains("versteckt");});
     var jetzt=reihen.filter(function(r){return min>=+r.dataset.von&&min<+r.dataset.bis})[0];
     var naechst=reihen.filter(function(r){return +r.dataset.von>min})[0];
-    var html="";
-    if(jetzt){html+="<div><b>Jetzt:</b> "+info(jetzt)+" · bis "+hm(+jetzt.dataset.bis)+"</div>";jetzt.querySelector(".kasten").classList.add("laeuft");}
-    if(naechst)html+="<div><b>Als Nächstes:</b> "+hm(+naechst.dataset.von)+" "+info(naechst)+"</div>";
-    if(!html)html=reihen.length?"<div>Heute keine Termine mehr.</div>":"<div>Heute frei.</div>";
-    box.innerHTML=html;box.hidden=false;
+    while(box.firstChild)box.removeChild(box.firstChild);
+    function zeile(label,text){var z=document.createElement("div");
+      if(label){var b=document.createElement("b");b.textContent=label;z.appendChild(b);z.appendChild(document.createTextNode(" "));}
+      z.appendChild(document.createTextNode(text));box.appendChild(z);}
+    if(jetzt){zeile("Jetzt:",info(jetzt)+" · bis "+hm(+jetzt.dataset.bis));jetzt.querySelector(".kasten").classList.add("laeuft");}
+    if(naechst)zeile("Als Nächstes:",hm(+naechst.dataset.von)+" "+info(naechst));
+    if(!jetzt&&!naechst)zeile("",reihen.length?"Heute keine Termine mehr.":"Heute frei.");
+    box.hidden=false;
     [].forEach.call(tag.querySelectorAll(".eintrag"),function(r){var s=+r.dataset.slot;
       if(min>=s&&min<s+120){var l=document.createElement("div");l.className="jetztlinie";
         l.style.top=((min-s)/120*100)+"%";r.appendChild(l);}});
   }
   jetztAktualisieren();setInterval(jetztAktualisieren,60000);
-  document.querySelectorAll(".legende button").forEach(function(b){b.addEventListener("click",jetztAktualisieren)});
+  [].forEach.call(document.querySelectorAll(".legende button"),function(b){b.addEventListener("click",jetztAktualisieren)});
 })();
 </script></body></html>
