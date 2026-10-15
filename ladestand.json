@@ -195,8 +195,8 @@
   },
   {
    "fach": "Data Science 2",
-   "prozent": 2,
-   "folien_fertig": 8,
+   "prozent": 0,
+   "folien_fertig": 0,
    "folien_gesamt": 397,
    "klausur": "2027-02-10",
    "naechstes": "01 Einleitung",
@@ -204,7 +204,7 @@
     {
      "nr": "01",
      "thema": "Einleitung",
-     "status": "🟡",
+     "status": "⬜",
      "folien": 16
     },
     {
