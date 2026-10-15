@@ -86,6 +86,20 @@ a.raum{display:inline-block;color:inherit;text-decoration:none;border-bottom:1px
 .jetztlinie{position:absolute;left:52px;right:0;height:2px;background:#d93025;z-index:1;pointer-events:none}
 .jetztlinie::before{content:"";position:absolute;left:-5px;top:-4px;width:10px;height:10px;border-radius:50%;background:#d93025}
 .kasten.laeuft{box-shadow:0 0 0 2px #d93025}
+.akku{border:1px solid #e1e4e8;border-radius:10px;background:#fff;margin:0 0 14px;padding:0 12px}
+.akku summary{cursor:pointer;font-size:14px;font-weight:600;padding:9px 0;list-style:none}
+.akku summary::-webkit-details-marker{display:none}
+.akku summary::after{content:" ▾";color:#8a939c;font-weight:400}
+.akku[open] summary::after{content:" ▴"}
+.akku summary small{font-weight:400;color:#57606a}
+.akkuzeile{display:grid;grid-template-columns:minmax(0,1fr) 44px;gap:2px 10px;padding:7px 0;border-top:1px solid #eef0f2}
+.akkuzeile .name{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.akkuzeile .pz{font-size:13px;font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.akkuzeile .balken{grid-column:1/-1;height:10px;border-radius:5px;background:#eef0f2;overflow:hidden}
+.akkuzeile .balken i{display:block;height:100%;border-radius:5px;background:#1b7f3b}
+.akkuzeile.niedrig .balken i{background:#c62828}.akkuzeile.mittel .balken i{background:#e08a12}
+.akkuzeile .nx{grid-column:1/-1;font-size:12px;color:#57606a}
+.akku .alt{font-size:12px;color:#b3261e;margin:0 0 8px}
 @media (max-width:760px){
   .raster{display:none}.liste{display:block}h1{font-size:18px}
   .tag{display:none}.tag.zeigen{display:block}
@@ -99,6 +113,7 @@ a.raum{display:inline-block;color:inherit;text-decoration:none;border-bottom:1px
 </style></head>
 <body><main>
 <div class="countdown"><div class="cd" data-id="20261128-klausureinfhrungindievwl" data-datum="2026-11-28" data-fach="VWL"><button class="weg" aria-label="ausblenden" title="ausblenden">×</button><b></b><span>Klausur Einführung in die VWL</span><span>Sa 28.11., 11:00 Uhr</span></div><div class="cd" data-id="20261204-nachschreibklausurmarket" data-datum="2026-12-04" data-fach="Marketing"><button class="weg" aria-label="ausblenden" title="ausblenden">×</button><b></b><span>Nachschreibklausur Marketing</span><span>Fr 04.12., 10:30 Uhr</span></div><div class="cd" data-id="20261204-nachschreibklausurrechnu" data-datum="2026-12-04" data-fach="Rechnungswesen"><button class="weg" aria-label="ausblenden" title="ausblenden">×</button><b></b><span>Nachschreibklausur Rechnungswesen</span><span>Fr 04.12., 15:00 Uhr</span></div><div class="cd" data-id="20270131-abgabebwlpaper" data-datum="2027-01-31" data-fach="BWL"><button class="weg" aria-label="ausblenden" title="ausblenden">×</button><b></b><span>Abgabe BWL-Paper</span><span>So 31.01., 15:00 Uhr</span></div><div class="cd" data-id="20270210-klausurdatascience" data-datum="2027-02-10" data-fach="Data Science 2"><button class="weg" aria-label="ausblenden" title="ausblenden">×</button><b></b><span>Klausur Data Science 2</span><span>Mi 10.02., 14:30 Uhr</span></div><div class="cd" data-id="20270218-klausurtheorieundpraxisd" data-datum="2027-02-18" data-fach="BWL"><button class="weg" aria-label="ausblenden" title="ausblenden">×</button><b></b><span>Klausur Theorie und Praxis der BWL</span><span>Do 18.02., 08:00 Uhr</span></div><div class="cd" data-id="20270219-klausurwirtschaftsundunt" data-datum="2027-02-19" data-fach="Ethik"><button class="weg" aria-label="ausblenden" title="ausblenden">×</button><b></b><span>Klausur Wirtschafts- und Unternehmensethik</span><span>Fr 19.02., 08:00 Uhr</span></div><div class="cd" data-id="20270225-klausurmikrokonomik" data-datum="2027-02-25" data-fach="Mikro"><button class="weg" aria-label="ausblenden" title="ausblenden">×</button><b></b><span>Klausur Mikroökonomik</span><span>Do 25.02., 14:00 Uhr</span></div></div>
+<details class="akku" hidden><summary>🔋 Lernstand <small></small></summary><div class="akkuliste"></div></details>
 <div class="neuinfo" hidden></div>
 <nav class="wahl"><button data-w="2026-KW42" aria-pressed="false">KW 42 · 12.10.–18.10.2026</button><button data-w="2026-KW43" aria-pressed="false">KW 43 · 19.10.–25.10.2026</button><button data-w="2026-KW44" aria-pressed="false">KW 44 · 26.10.–01.11.2026</button><button data-w="2026-KW45" aria-pressed="false">KW 45 · 02.11.–08.11.2026</button><button data-w="2026-KW46" aria-pressed="false">KW 46 · 09.11.–15.11.2026</button><button data-w="2026-KW47" aria-pressed="false">KW 47 · 16.11.–22.11.2026</button><button data-w="2026-KW48" aria-pressed="false">KW 48 · 23.11.–29.11.2026</button><button data-w="2026-KW49" aria-pressed="false">KW 49 · 30.11.–06.12.2026</button><button data-w="2026-KW50" aria-pressed="false">KW 50 · 07.12.–13.12.2026</button><button data-w="2026-KW51" aria-pressed="false">KW 51 · 14.12.–20.12.2026</button><button data-w="2026-KW52" aria-pressed="false">KW 52 · 21.12.–27.12.2026</button><button data-w="2026-KW53" aria-pressed="false">KW 53 · 28.12.–03.01.2027</button><button data-w="2027-KW01" aria-pressed="false">KW 1 · 04.01.–10.01.2027</button><button data-w="2027-KW02" aria-pressed="false">KW 2 · 11.01.–17.01.2027</button><button data-w="2027-KW03" aria-pressed="false">KW 3 · 18.01.–24.01.2027</button><button data-w="2027-KW04" aria-pressed="false">KW 4 · 25.01.–31.01.2027</button><button data-w="2027-KW05" aria-pressed="false">KW 5 · 01.02.–07.02.2027</button></nav>
 <div class="jetzt" hidden></div>
@@ -472,6 +487,32 @@ a.raum{display:inline-block;color:inherit;text-decoration:none;border-bottom:1px
         l.style.top=((min-s)/120*100)+"%";r.appendChild(l);}});
   }
   jetztAktualisieren();setInterval(jetztAktualisieren,60000);
+
+  // Lernstand-Akku: ladestand.json wird von scripts/ladestand.sh geschrieben und gepusht, hier immer frisch geladen
+  (function(){var box=document.querySelector(".akku");if(!box||!window.fetch)return;
+    var gemerkt=null;try{gemerkt=localStorage.getItem("sp_akku_zu")}catch(e){}
+    box.open=gemerkt===null?!window.matchMedia("(max-width:760px)").matches:gemerkt!=="1";
+    box.addEventListener("toggle",function(){try{localStorage.setItem("sp_akku_zu",box.open?"0":"1")}catch(e){}});
+    fetch("ladestand.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(d){
+      if(!d||!d.faecher)return;var liste=box.querySelector(".akkuliste");
+      function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;}
+      var p=d.stand.split("-"),alter=Math.round((h0-new Date(+p[0],p[1]-1,+p[2]))/864e5);
+      box.querySelector("summary small").textContent="· zuletzt geändert "+p[2]+"."+p[1]+".";
+      if(alter>7)liste.appendChild(el("p","alt","Seit "+alter+" Tagen kein Fortschritt eingetragen."));
+      
+      d.faecher.forEach(function(f){var z=el("div","akkuzeile");
+        z.appendChild(el("span","name",f.fach));
+        z.appendChild(el("span","pz",f.prozent==null?"—":f.prozent+" %"));
+        var b=el("div","balken"),i=el("i");i.style.width=(f.prozent||0)+"%";b.appendChild(i);z.appendChild(b);
+        var nx=f.prozent==null?"noch keine Kapitel eingetragen":f.naechstes?"Als Nächstes: "+f.naechstes:"alles fertig ✓";
+        if(f.klausur){var k=f.klausur.split("-"),n=Math.round((new Date(+k[0],k[1]-1,+k[2])-h0)/864e5);
+          if(n>=0)nx+=" · Klausur "+(n===0?"heute":"in "+n+" T");}
+        z.appendChild(el("span","nx",nx));
+        if(f.prozent!=null){z.classList.add(f.prozent<20?"niedrig":f.prozent<60?"mittel":"gut")}
+        liste.appendChild(z);});
+      box.hidden=false;
+    }).catch(function(){});
+  })();
   [].forEach.call(document.querySelectorAll(".legende button"),function(b){b.addEventListener("click",jetztAktualisieren)});
 })();
 </script></body></html>

@@ -1,0 +1,326 @@
+{
+ "stand": "2026-10-15",
+ "faecher": [
+  {
+   "fach": "Einführung in die VWL",
+   "prozent": 0,
+   "folien_fertig": 0,
+   "folien_gesamt": 92,
+   "klausur": "2026-11-28",
+   "naechstes": "01 Einführung",
+   "kapitel": [
+    {
+     "nr": "01",
+     "thema": "Einführung",
+     "status": "⬜",
+     "folien": 43
+    },
+    {
+     "nr": "02",
+     "thema": "Nachfrage, Angebot und Gleichgewicht",
+     "status": "⬜",
+     "folien": 49
+    }
+   ]
+  },
+  {
+   "fach": "Marketing (Nachschreiben)",
+   "prozent": 0,
+   "folien_fertig": 0,
+   "folien_gesamt": 916,
+   "klausur": "2026-12-04",
+   "naechstes": "01 Intro",
+   "kapitel": [
+    {
+     "nr": "01",
+     "thema": "Intro",
+     "status": "⬜",
+     "folien": 76
+    },
+    {
+     "nr": "02",
+     "thema": "Developing",
+     "status": "⬜",
+     "folien": 265
+    },
+    {
+     "nr": "03",
+     "thema": "Implementing: Product",
+     "status": "⬜",
+     "folien": 148
+    },
+    {
+     "nr": "04",
+     "thema": "Implementing: Price",
+     "status": "⬜",
+     "folien": 123
+    },
+    {
+     "nr": "05",
+     "thema": "Implementing: Promotion",
+     "status": "⬜",
+     "folien": 83
+    },
+    {
+     "nr": "06",
+     "thema": "Implementing: Place",
+     "status": "⬜",
+     "folien": 109
+    },
+    {
+     "nr": "07",
+     "thema": "Performance Measurement",
+     "status": "⬜",
+     "folien": 96
+    },
+    {
+     "nr": "08",
+     "thema": "Strategy",
+     "status": "⬜",
+     "folien": 16
+    }
+   ]
+  },
+  {
+   "fach": "Rechnungswesen (BWL 2)",
+   "prozent": 14,
+   "folien_fertig": 41,
+   "folien_gesamt": 299,
+   "klausur": "2026-12-04",
+   "naechstes": "1.4 Buchführung",
+   "kapitel": [
+    {
+     "nr": "1.1",
+     "thema": "Unternehmensziele",
+     "status": "🟩",
+     "folien": 4
+    },
+    {
+     "nr": "1.2",
+     "thema": "Abbildung der Geschäftstätigkeit",
+     "status": "🟩",
+     "folien": 15
+    },
+    {
+     "nr": "1.3",
+     "thema": "Rechengrößen",
+     "status": "🟩",
+     "folien": 11
+    },
+    {
+     "nr": "1.4",
+     "thema": "Buchführung",
+     "status": "🟡",
+     "folien": 22
+    },
+    {
+     "nr": "2.1",
+     "thema": "Zwecke, Normen, Bestandteile",
+     "status": "⬜",
+     "folien": 27
+    },
+    {
+     "nr": "2.2",
+     "thema": "Bilanzierung des Vermögens",
+     "status": "⬜",
+     "folien": 32
+    },
+    {
+     "nr": "2.3",
+     "thema": "Umlaufvermögen",
+     "status": "⬜",
+     "folien": 15
+    },
+    {
+     "nr": "2.4",
+     "thema": "Eigenkapital",
+     "status": "⬜",
+     "folien": 19
+    },
+    {
+     "nr": "2.5",
+     "thema": "Schulden",
+     "status": "⬜",
+     "folien": 15
+    },
+    {
+     "nr": "2.6",
+     "thema": "Jahresabschlussanalyse",
+     "status": "⬜",
+     "folien": 23
+    },
+    {
+     "nr": "3.1",
+     "thema": "Zwecke und Ausgestaltung",
+     "status": "⬜",
+     "folien": 8
+    },
+    {
+     "nr": "3.2",
+     "thema": "Betriebsergebnisrechnung",
+     "status": "⬜",
+     "folien": 8
+    },
+    {
+     "nr": "3.3",
+     "thema": "Kalkulation",
+     "status": "⬜",
+     "folien": 20
+    },
+    {
+     "nr": "3.4",
+     "thema": "Interne Dienstleistungen",
+     "status": "⬜",
+     "folien": 15
+    },
+    {
+     "nr": "3.5",
+     "thema": "Entscheidungsfundierung",
+     "status": "⬜",
+     "folien": 26
+    },
+    {
+     "nr": "3.6",
+     "thema": "Wirtschaftlichkeitskontrolle",
+     "status": "⬜",
+     "folien": 17
+    },
+    {
+     "nr": "3.7",
+     "thema": "Kostenmanagement",
+     "status": "⬜",
+     "folien": 22
+    }
+   ]
+  },
+  {
+   "fach": "Data Science 2",
+   "prozent": 0,
+   "folien_fertig": 0,
+   "folien_gesamt": 397,
+   "klausur": "2027-02-10",
+   "naechstes": "01 Einleitung",
+   "kapitel": [
+    {
+     "nr": "01",
+     "thema": "Einleitung",
+     "status": "⬜",
+     "folien": 16
+    },
+    {
+     "nr": "02",
+     "thema": "Zufallsvorgänge und Wahrscheinlichkeiten",
+     "status": "⬜",
+     "folien": 87
+    },
+    {
+     "nr": "03",
+     "thema": "Zufallsvariable und Verteilungen",
+     "status": "⬜",
+     "folien": 116
+    },
+    {
+     "nr": "04",
+     "thema": "Gemeinsame Verteilung und Grenzwertsätze",
+     "status": "⬜",
+     "folien": 71
+    },
+    {
+     "nr": "05",
+     "thema": "Stichproben und Statistiken",
+     "status": "⬜",
+     "folien": 22
+    },
+    {
+     "nr": "06",
+     "thema": "Schätzverfahren für Parameter",
+     "status": "⬜",
+     "folien": 37
+    },
+    {
+     "nr": "07",
+     "thema": "Hypothesentests",
+     "status": "⬜",
+     "folien": 48
+    }
+   ]
+  },
+  {
+   "fach": "Willkommen zur BWL",
+   "prozent": null,
+   "folien_fertig": 0,
+   "folien_gesamt": 0,
+   "klausur": "2027-02-18",
+   "naechstes": null,
+   "kapitel": []
+  },
+  {
+   "fach": "Wirtschafts- und Unternehmensethik",
+   "prozent": 0,
+   "folien_fertig": 0,
+   "folien_gesamt": 340,
+   "klausur": "2027-02-19",
+   "naechstes": "1 Grundlagen der Ethik",
+   "kapitel": [
+    {
+     "nr": "1",
+     "thema": "Grundlagen der Ethik",
+     "status": "⬜",
+     "folien": 11
+    },
+    {
+     "nr": "2",
+     "thema": "Moral und Rationalität",
+     "status": "⬜",
+     "folien": 10
+    },
+    {
+     "nr": "3",
+     "thema": "Ansätze der Ethik",
+     "status": "⬜",
+     "folien": 73
+    },
+    {
+     "nr": "4",
+     "thema": "Wann handelt Homo Oeconomicus moralisch?",
+     "status": "⬜",
+     "folien": 25
+    },
+    {
+     "nr": "5",
+     "thema": "Die Ethik der Rahmenordnung",
+     "status": "⬜",
+     "folien": 79
+    },
+    {
+     "nr": "6",
+     "thema": "Die Ethik des Unternehmens",
+     "status": "⬜",
+     "folien": 122
+    },
+    {
+     "nr": "7",
+     "thema": "Die Ethik des Individuums im Unternehmen",
+     "status": "⬜",
+     "folien": 20
+    }
+   ]
+  },
+  {
+   "fach": "Mikroökonomik",
+   "prozent": 0,
+   "folien_fertig": 0,
+   "folien_gesamt": 33,
+   "klausur": "2027-02-25",
+   "naechstes": "01 Einführung",
+   "kapitel": [
+    {
+     "nr": "01",
+     "thema": "Einführung",
+     "status": "⬜",
+     "folien": 33
+    }
+   ]
+  }
+ ]
+}
