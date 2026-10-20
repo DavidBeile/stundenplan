@@ -1,11 +1,11 @@
 {
- "stand": "2026-10-15",
+ "stand": "2026-10-20",
  "faecher": [
   {
    "fach": "Einführung in die VWL",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 92,
+   "folien_gesamt": 165,
    "klausur": "2026-11-28",
    "naechstes": "01 Einführung",
    "kapitel": [
@@ -20,6 +20,12 @@
      "thema": "Nachfrage, Angebot und Gleichgewicht",
      "status": "⬜",
      "folien": 49
+    },
+    {
+     "nr": "03",
+     "thema": "Normative Analysen und Anwendungen",
+     "status": "⬜",
+     "folien": 73
     }
    ]
   },
@@ -310,7 +316,7 @@
    "fach": "Mikroökonomik",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 33,
+   "folien_gesamt": 76,
    "klausur": "2027-02-25",
    "naechstes": "01 Einführung",
    "kapitel": [
@@ -319,6 +325,12 @@
      "thema": "Einführung",
      "status": "⬜",
      "folien": 33
+    },
+    {
+     "nr": "02",
+     "thema": "Budget und Präferenzen",
+     "status": "⬜",
+     "folien": 43
     }
    ]
   }
