@@ -253,12 +253,25 @@
   },
   {
    "fach": "Willkommen zur BWL",
-   "prozent": null,
+   "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 0,
+   "folien_gesamt": 108,
    "klausur": "2027-02-18",
-   "naechstes": null,
-   "kapitel": []
+   "naechstes": "A-01 Allgemeine BWL: Einführung ins Modul + Grundverständnis der BWL",
+   "kapitel": [
+    {
+     "nr": "A-01",
+     "thema": "Allgemeine BWL: Einführung ins Modul + Grundverständnis der BWL",
+     "status": "⬜",
+     "folien": 53
+    },
+    {
+     "nr": "S-01",
+     "thema": "Spezielle BWL: Management",
+     "status": "⬜",
+     "folien": 55
+    }
+   ]
   },
   {
    "fach": "Wirtschafts- und Unternehmensethik",
