@@ -1,11 +1,11 @@
 {
- "stand": "2026-10-20",
+ "stand": "2026-10-22",
  "faecher": [
   {
    "fach": "Einführung in die VWL",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 165,
+   "folien_gesamt": 197,
    "klausur": "2026-11-28",
    "naechstes": "01 Einführung",
    "kapitel": [
@@ -26,6 +26,12 @@
      "thema": "Normative Analysen und Anwendungen",
      "status": "⬜",
      "folien": 73
+    },
+    {
+     "nr": "04",
+     "thema": "Externalitäten",
+     "status": "⬜",
+     "folien": 32
     }
    ]
   },
