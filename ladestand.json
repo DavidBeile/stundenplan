@@ -1,5 +1,5 @@
 {
- "stand": "2026-10-22",
+ "stand": "2026-10-24",
  "faecher": [
   {
    "fach": "Einführung in die VWL",
@@ -335,7 +335,7 @@
    "fach": "Mikroökonomik",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 76,
+   "folien_gesamt": 111,
    "klausur": "2027-02-25",
    "naechstes": "01 Einführung",
    "kapitel": [
@@ -350,6 +350,12 @@
      "thema": "Budget und Präferenzen",
      "status": "⬜",
      "folien": 43
+    },
+    {
+     "nr": "03",
+     "thema": "Optimale Wahl",
+     "status": "⬜",
+     "folien": 35
     }
    ]
   }
