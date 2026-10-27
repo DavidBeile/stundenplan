@@ -1,5 +1,5 @@
 {
- "stand": "2026-10-24",
+ "stand": "2026-10-27",
  "faecher": [
   {
    "fach": "Einführung in die VWL",
@@ -281,28 +281,28 @@
   },
   {
    "fach": "Wirtschafts- und Unternehmensethik",
-   "prozent": 0,
-   "folien_fertig": 0,
+   "prozent": 17,
+   "folien_fertig": 58,
    "folien_gesamt": 340,
    "klausur": "2027-02-19",
-   "naechstes": "1 Grundlagen der Ethik",
+   "naechstes": "3 Ansätze der Ethik",
    "kapitel": [
     {
      "nr": "1",
      "thema": "Grundlagen der Ethik",
-     "status": "⬜",
+     "status": "🟩",
      "folien": 11
     },
     {
      "nr": "2",
      "thema": "Moral und Rationalität",
-     "status": "⬜",
+     "status": "🟩",
      "folien": 10
     },
     {
      "nr": "3",
      "thema": "Ansätze der Ethik",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 73
     },
     {
