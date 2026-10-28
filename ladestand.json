@@ -1,11 +1,11 @@
 {
- "stand": "2026-10-27",
+ "stand": "2026-10-28",
  "faecher": [
   {
    "fach": "Einführung in die VWL",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 197,
+   "folien_gesamt": 284,
    "klausur": "2026-11-28",
    "naechstes": "01 Einführung",
    "kapitel": [
@@ -32,6 +32,18 @@
      "thema": "Externalitäten",
      "status": "⬜",
      "folien": 32
+    },
+    {
+     "nr": "05",
+     "thema": "Monopol",
+     "status": "⬜",
+     "folien": 42
+    },
+    {
+     "nr": "06",
+     "thema": "Spieltheorie",
+     "status": "⬜",
+     "folien": 45
     }
    ]
   },
