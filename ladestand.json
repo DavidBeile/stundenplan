@@ -273,7 +273,7 @@
    "fach": "Willkommen zur BWL",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 108,
+   "folien_gesamt": 235,
    "klausur": "2027-02-18",
    "naechstes": "A-01 Allgemeine BWL: Einführung ins Modul + Grundverständnis der BWL",
    "kapitel": [
@@ -288,6 +288,18 @@
      "thema": "Spezielle BWL: Management",
      "status": "⬜",
      "folien": 55
+    },
+    {
+     "nr": "A-02",
+     "thema": "Allgemeine BWL: Wert in der BWL",
+     "status": "⬜",
+     "folien": 48
+    },
+    {
+     "nr": "S-02",
+     "thema": "Spezielle BWL: Accounting",
+     "status": "⬜",
+     "folien": 79
     }
    ]
   },
