@@ -1,30 +1,30 @@
 {
- "stand": "2026-10-28",
+ "stand": "2026-11-01",
  "faecher": [
   {
    "fach": "Einführung in die VWL",
-   "prozent": 0,
-   "folien_fertig": 0,
+   "prozent": 37,
+   "folien_fertig": 104,
    "folien_gesamt": 284,
    "klausur": "2026-11-28",
-   "naechstes": "01 Einführung",
+   "naechstes": "02 Nachfrage, Angebot und Gleichgewicht",
    "kapitel": [
     {
      "nr": "01",
      "thema": "Einführung",
-     "status": "⬜",
+     "status": "🟩",
      "folien": 43
     },
     {
      "nr": "02",
      "thema": "Nachfrage, Angebot und Gleichgewicht",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 49
     },
     {
      "nr": "03",
      "thema": "Normative Analysen und Anwendungen",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 73
     },
     {
