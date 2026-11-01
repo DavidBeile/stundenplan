@@ -107,11 +107,11 @@
   },
   {
    "fach": "Rechnungswesen (BWL 2)",
-   "prozent": 14,
-   "folien_fertig": 41,
+   "prozent": 17,
+   "folien_fertig": 52,
    "folien_gesamt": 299,
    "klausur": "2026-12-04",
-   "naechstes": "1.4 Buchführung",
+   "naechstes": "2.1 Zwecke, Normen, Bestandteile",
    "kapitel": [
     {
      "nr": "1.1",
@@ -134,7 +134,7 @@
     {
      "nr": "1.4",
      "thema": "Buchführung",
-     "status": "🟡",
+     "status": "🟩",
      "folien": 22
     },
     {
