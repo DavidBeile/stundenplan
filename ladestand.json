@@ -1,11 +1,11 @@
 {
- "stand": "2026-11-01",
+ "stand": "2026-11-02",
  "faecher": [
   {
    "fach": "Einführung in die VWL",
-   "prozent": 37,
+   "prozent": 31,
    "folien_fertig": 104,
-   "folien_gesamt": 284,
+   "folien_gesamt": 339,
    "klausur": "2026-11-28",
    "naechstes": "02 Nachfrage, Angebot und Gleichgewicht",
    "kapitel": [
@@ -44,6 +44,18 @@
      "thema": "Spieltheorie",
      "status": "⬜",
      "folien": 45
+    },
+    {
+     "nr": "07",
+     "thema": "Asymmetrische Informationen",
+     "status": "⬜",
+     "folien": 20
+    },
+    {
+     "nr": "08",
+     "thema": "Einführung Makroökonomie",
+     "status": "⬜",
+     "folien": 35
     }
    ]
   },
@@ -273,7 +285,7 @@
    "fach": "Willkommen zur BWL",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 235,
+   "folien_gesamt": 291,
    "klausur": "2027-02-18",
    "naechstes": "A-01 Allgemeine BWL: Einführung ins Modul + Grundverständnis der BWL",
    "kapitel": [
@@ -300,6 +312,12 @@
      "thema": "Spezielle BWL: Accounting",
      "status": "⬜",
      "folien": 79
+    },
+    {
+     "nr": "A-03",
+     "thema": "Allgemeine BWL: BWL als Wissenschaft",
+     "status": "⬜",
+     "folien": 56
     }
    ]
   },
