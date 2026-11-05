@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-02",
+ "stand": "2026-11-05",
  "faecher": [
   {
    "fach": "Einführung in die VWL",
@@ -119,8 +119,8 @@
   },
   {
    "fach": "Rechnungswesen (BWL 2)",
-   "prozent": 17,
-   "folien_fertig": 52,
+   "prozent": 23,
+   "folien_fertig": 68,
    "folien_gesamt": 299,
    "klausur": "2026-12-04",
    "naechstes": "2.1 Zwecke, Normen, Bestandteile",
@@ -158,7 +158,7 @@
     {
      "nr": "2.2",
      "thema": "Bilanzierung des Vermögens",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 32
     },
     {
