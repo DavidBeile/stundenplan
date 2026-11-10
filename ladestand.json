@@ -1,11 +1,11 @@
 {
- "stand": "2026-11-05",
+ "stand": "2026-11-10",
  "faecher": [
   {
    "fach": "Einführung in die VWL",
-   "prozent": 31,
+   "prozent": 24,
    "folien_fertig": 104,
-   "folien_gesamt": 339,
+   "folien_gesamt": 442,
    "klausur": "2026-11-28",
    "naechstes": "02 Nachfrage, Angebot und Gleichgewicht",
    "kapitel": [
@@ -56,6 +56,24 @@
      "thema": "Einführung Makroökonomie",
      "status": "⬜",
      "folien": 35
+    },
+    {
+     "nr": "09",
+     "thema": "Makroökonomie in der langen Frist",
+     "status": "⬜",
+     "folien": 30
+    },
+    {
+     "nr": "10",
+     "thema": "Arbeitsmarkt",
+     "status": "⬜",
+     "folien": 32
+    },
+    {
+     "nr": "11",
+     "thema": "Konjunkturelle Schwankungen",
+     "status": "⬜",
+     "folien": 41
     }
    ]
   },
@@ -285,7 +303,7 @@
    "fach": "Willkommen zur BWL",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 291,
+   "folien_gesamt": 422,
    "klausur": "2027-02-18",
    "naechstes": "A-01 Allgemeine BWL: Einführung ins Modul + Grundverständnis der BWL",
    "kapitel": [
@@ -318,6 +336,24 @@
      "thema": "Allgemeine BWL: BWL als Wissenschaft",
      "status": "⬜",
      "folien": 56
+    },
+    {
+     "nr": "S-03",
+     "thema": "Spezielle BWL: Finance",
+     "status": "⬜",
+     "folien": 29
+    },
+    {
+     "nr": "A-04",
+     "thema": "Allgemeine BWL: Data Analytics",
+     "status": "⬜",
+     "folien": 53
+    },
+    {
+     "nr": "S-04",
+     "thema": "Spezielle BWL: Marketing",
+     "status": "⬜",
+     "folien": 49
     }
    ]
   },
@@ -377,7 +413,7 @@
    "fach": "Mikroökonomik",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 111,
+   "folien_gesamt": 151,
    "klausur": "2027-02-25",
    "naechstes": "01 Einführung",
    "kapitel": [
@@ -398,6 +434,12 @@
      "thema": "Optimale Wahl",
      "status": "⬜",
      "folien": 35
+    },
+    {
+     "nr": "04",
+     "thema": "Nachfrage",
+     "status": "⬜",
+     "folien": 40
     }
    ]
   }
