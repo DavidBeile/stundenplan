@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-10",
+ "stand": "2026-11-13",
  "faecher": [
   {
    "fach": "Einführung in die VWL",
@@ -303,7 +303,7 @@
    "fach": "Willkommen zur BWL",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 422,
+   "folien_gesamt": 482,
    "klausur": "2027-02-18",
    "naechstes": "A-01 Allgemeine BWL: Einführung ins Modul + Grundverständnis der BWL",
    "kapitel": [
@@ -354,6 +354,12 @@
      "thema": "Spezielle BWL: Marketing",
      "status": "⬜",
      "folien": 49
+    },
+    {
+     "nr": "A-05",
+     "thema": "Allgemeine BWL: Kritisches Denken",
+     "status": "⬜",
+     "folien": 60
     }
    ]
   },
