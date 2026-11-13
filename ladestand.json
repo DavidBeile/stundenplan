@@ -3,8 +3,8 @@
  "faecher": [
   {
    "fach": "Einführung in die VWL",
-   "prozent": 37,
-   "folien_fertig": 164,
+   "prozent": 55,
+   "folien_fertig": 242,
    "folien_gesamt": 442,
    "klausur": "2026-11-28",
    "naechstes": "02 Nachfrage, Angebot und Gleichgewicht",
@@ -48,31 +48,31 @@
     {
      "nr": "07",
      "thema": "Asymmetrische Informationen",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 20
     },
     {
      "nr": "08",
      "thema": "Einführung Makroökonomie",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 35
     },
     {
      "nr": "09",
      "thema": "Makroökonomie in der langen Frist",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 30
     },
     {
      "nr": "10",
      "thema": "Arbeitsmarkt",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 32
     },
     {
      "nr": "11",
      "thema": "Konjunkturelle Schwankungen",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 41
     }
    ]
