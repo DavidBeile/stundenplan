@@ -3,8 +3,8 @@
  "faecher": [
   {
    "fach": "Einführung in die VWL",
-   "prozent": 24,
-   "folien_fertig": 104,
+   "prozent": 37,
+   "folien_fertig": 164,
    "folien_gesamt": 442,
    "klausur": "2026-11-28",
    "naechstes": "02 Nachfrage, Angebot und Gleichgewicht",
@@ -30,19 +30,19 @@
     {
      "nr": "04",
      "thema": "Externalitäten",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 32
     },
     {
      "nr": "05",
      "thema": "Monopol",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 42
     },
     {
      "nr": "06",
      "thema": "Spieltheorie",
-     "status": "⬜",
+     "status": "🟡",
      "folien": 45
     },
     {
