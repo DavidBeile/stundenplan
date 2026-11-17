@@ -309,7 +309,7 @@
    "fach": "Willkommen zur BWL",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 482,
+   "folien_gesamt": 532,
    "klausur": "2027-02-18",
    "naechstes": "A-01 Allgemeine BWL: Einführung ins Modul + Grundverständnis der BWL",
    "kapitel": [
@@ -366,6 +366,12 @@
      "thema": "Allgemeine BWL: Kritisches Denken",
      "status": "⬜",
      "folien": 60
+    },
+    {
+     "nr": "S-05",
+     "thema": "Spezielle BWL: Entrepreneurship",
+     "status": "⬜",
+     "folien": 50
     }
    ]
   },
