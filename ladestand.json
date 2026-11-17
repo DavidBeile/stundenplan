@@ -1,11 +1,11 @@
 {
- "stand": "2026-11-13",
+ "stand": "2026-11-17",
  "faecher": [
   {
    "fach": "Einführung in die VWL",
-   "prozent": 55,
+   "prozent": 53,
    "folien_fertig": 242,
-   "folien_gesamt": 442,
+   "folien_gesamt": 454,
    "klausur": "2026-11-28",
    "naechstes": "02 Nachfrage, Angebot und Gleichgewicht",
    "kapitel": [
@@ -74,6 +74,12 @@
      "thema": "Konjunkturelle Schwankungen",
      "status": "🟡",
      "folien": 41
+    },
+    {
+     "nr": "12",
+     "thema": "Geldpolitik",
+     "status": "⬜",
+     "folien": 12
     }
    ]
   },
@@ -419,7 +425,7 @@
    "fach": "Mikroökonomik",
    "prozent": 0,
    "folien_fertig": 0,
-   "folien_gesamt": 151,
+   "folien_gesamt": 181,
    "klausur": "2027-02-25",
    "naechstes": "01 Einführung",
    "kapitel": [
@@ -446,6 +452,12 @@
      "thema": "Nachfrage",
      "status": "⬜",
      "folien": 40
+    },
+    {
+     "nr": "05",
+     "thema": "Marktnachfrage und Konsumentenrente",
+     "status": "⬜",
+     "folien": 30
     }
    ]
   }
